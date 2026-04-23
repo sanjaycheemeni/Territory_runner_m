@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:territory_runner/presentation/pages/dashboard_screen.dart';
 import 'package:territory_runner/presentation/pages/login_page.dart';
 import 'package:territory_runner/presentation/pages/otp_verification_page.dart';
 import 'package:territory_runner/presentation/pages/verification_success_page.dart';
@@ -18,12 +19,12 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(textTheme: GoogleFonts.poppinsTextTheme()),
       darkTheme: ThemeData(
-        textTheme: GoogleFonts.poppinsTextTheme(ThemeData.dark().textTheme),
-        brightness: Brightness.dark,
+        textTheme: GoogleFonts.poppinsTextTheme(ThemeData.light().textTheme),
+        // brightness: Brightness.dark,
         primaryColor: Colors.white,
       ),
       themeMode: ThemeMode.dark,
-      home: const VerificationSuccessPage(),
+      home: const DashboardScreen(),
     );
   }
 }
